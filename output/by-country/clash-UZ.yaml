@@ -4,31 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇪 IE 01 - xiaohe
+- name: 🇺🇿 UZ 01 - xiaohe
   type: vless
-  server: fq.jp188.dpdns.org
-  port: 443
-  uuid: 42c62a5a-cd31-4551-80ef-908732370287
+  server: 189.74.97.47
+  port: 2087
+  uuid: 894fe9f0-b998-49c0-8003-a5007de921e1
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: fq.jp188.dpdns.org
   network: ws
   ws-opts:
-    path: /
+    path: /755276b33b6f
     headers:
-      Host: fq.jp188.dpdns.org
+      Host: 189.74.97.47
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇪 IE 01 - xiaohe
+  - 🇺🇿 UZ 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇪 IE 01 - xiaohe
+  - 🇺🇿 UZ 01 - xiaohe
 rules:
 - MATCH,PROXIES
