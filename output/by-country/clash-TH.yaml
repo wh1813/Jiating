@@ -6,32 +6,6 @@ log-level: info
 proxies:
 - name: 🇹🇭 TH 01 - xiaohe
   type: vless
-  server: www.ipget.net
-  port: 8880
-  uuid: e06b6255-1c90-4db0-bd8c-7704df82b27c
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: silent-cherry-7112.257.workers.dev
-- name: 🇹🇭 TH 02 - xiaohe
-  type: vless
-  server: www.glassdoor.com
-  port: 8880
-  uuid: 3bf2781f-63a2-4c38-ad02-2cc337c2f7fa
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: silent-heart-175f.325-a85.workers.dev
-- name: 🇹🇭 TH 03 - xiaohe
-  type: vless
   server: 43.133.110.81
   port: 443
   uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
@@ -44,7 +18,20 @@ proxies:
     path: /?TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-- name: 🇹🇭 TH 04 - xiaohe
+- name: 🇹🇭 TH 02 - xiaohe
+  type: vless
+  server: 103.86.49.57
+  port: 80
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: aIs.SpEeDtEsT.nEt
+- name: 🇹🇭 TH 03 - xiaohe
   type: vmess
   server: 118.193.57.167
   port: 49667
@@ -67,7 +54,6 @@ proxy-groups:
   - 🇹🇭 TH 01 - xiaohe
   - 🇹🇭 TH 02 - xiaohe
   - 🇹🇭 TH 03 - xiaohe
-  - 🇹🇭 TH 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -76,6 +62,5 @@ proxy-groups:
   - 🇹🇭 TH 01 - xiaohe
   - 🇹🇭 TH 02 - xiaohe
   - 🇹🇭 TH 03 - xiaohe
-  - 🇹🇭 TH 04 - xiaohe
 rules:
 - MATCH,PROXIES
