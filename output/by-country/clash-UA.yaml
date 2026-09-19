@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇶 IQ 01 - xiaohe
+- name: 🇺🇦 UA 01 - xiaohe
   type: vless
-  server: 104.21.94.230
-  port: 443
-  uuid: de78c0b1-c5c8-412a-bd92-430d1f2e2642
+  server: 64.227.67.161
+  port: 2083
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: FroSTy-PonD-7436.SHHabbYAt914.woRkErS.dEv
+  servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /NmrU9ImDG7jA7oFEem
+    path: /members/detail/gif
     headers:
-      Host: frosty-pond-7436.shhabbyat914.workers.dev
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇶 IQ 01 - xiaohe
+  - 🇺🇦 UA 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇶 IQ 01 - xiaohe
+  - 🇺🇦 UA 01 - xiaohe
 rules:
 - MATCH,PROXIES
